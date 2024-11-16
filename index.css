@@ -1,5 +1,16 @@
 /* importing inter fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:wght@200..800&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@1,200..800&family=Mountains+of+Christmas&family=Sixtyfour+Convergence&display=swap');
+
+
+@font-face {
+    font-family: 'SantaFont'; /* Name you want to reference the font by */
+    src: url('assets/fonts/Santa.otf') format('truetype'); /* Path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 * {
     margin: 0;
@@ -41,17 +52,10 @@ body{
     gap: 10px;
 }
 
-.header-info .heading-logo{
-    height: 35px;
-    width: 35px;
-    background: #fff;
-    border-radius: 50%;
-    padding: 3px;
-    fill: #5350c4;
-    flex-shrink: 0;
-}
 
 .header-info .logo-text {
+    font-family: "Mountains of Christmas", serif;
+    letter-spacing: 4px;
     color: #fff;
     font-size: 1.31rem;
     font-weight: 600;
@@ -115,6 +119,10 @@ body{
 }
 
 .chat-body .bot-message .message-text {
+    font-family: 'SantaFont', cursive;
+    letter-spacing: 2px;
+    text-transform: capitalize; /* Optional: Capitalize first letter of each word */
+    line-height: 1.2;
     background: #d9d9f3;
     border-radius: 15px 15px 15px 1px;
 }
@@ -141,7 +149,7 @@ body{
     width: 7px;
     border-radius: 50%;
     background: #6f6bc2;
-    /* animation: dotPulse 1.8s ease-in-out infinite; */
+    animation: dotPulse 1.8s ease-in-out infinite;
     opacity: 0.7;
 }
 
