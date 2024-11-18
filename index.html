@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Chatbot</title>
     <link href="index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=keyboard_arrow_down" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=keyboard_arrow_down,mode_comment,x" />
 </head>
 
 <body>
+
+    <button id="chatbot-toggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+
+    </button>
 
     <div class="chatbot-popup">
         <!-- ChatBot header -->
@@ -39,7 +45,7 @@
             <form action="#" class="chat-form">
                 <textarea class="message-input" required placeholder="Type here..."></textarea>
                 <div class="chat-controls">
-                    <button type="button"><img src="assets/smile.png" height="25px" width="25x" /></button>
+                    <button type="button" id="emoji-picker"><img src="assets/smile.png" height="25px" width="25px" /></button>
                     <div class="file-upload-wrapper">
                         <input type="file" accept="images/*" id="file-input" hidden>
                         <button id="file-attachment" type="button"><img src="assets/link.png" height="25px" width="25x" /></button>
@@ -50,6 +56,9 @@
          </div>
 
     </div>
+
+    <!-- emoji script from emojiMart github-->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
 
     <script src="script.js"></script>
 
