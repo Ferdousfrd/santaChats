@@ -40,7 +40,10 @@
                 <textarea class="message-input" required placeholder="Type here..."></textarea>
                 <div class="chat-controls">
                     <button type="button"><img src="assets/smile.png" height="25px" width="25x" /></button>
-                    <button type="button"><img src="assets/link.png" height="25px" width="25x" /></button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="images/*" id="file-input" hidden>
+                        <button id="file-attachment" type="button"><img src="assets/link.png" height="25px" width="25x" /></button>
+                    </div>
                     <button id="send-message" type="submit"><img src="assets/up-arrow.png" height="25px" width="25x" /></button>
                 </div>
             </form>

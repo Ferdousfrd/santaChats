@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'SantaFont'; /* Name you want to reference the font by */
-    src: url('assets/fonts/Santa.otf') format('truetype'); /* Path to your font file */
+    src: url('assets/fonts/Santa.otf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -87,6 +87,8 @@ body{
     overflow-y: auto;
     height: 460px;
     margin-bottom: 82px;
+    scrollbar-width: thin;
+    scrollbar-color: #ccccf5 transparent;
 }
 
 .chat-body .message {
@@ -121,7 +123,7 @@ body{
 .chat-body .bot-message .message-text {
     font-family: 'SantaFont', cursive;
     letter-spacing: 2px;
-    text-transform: capitalize; /* Optional: Capitalize first letter of each word */
+    font-weight: 600;
     line-height: 1.2;
     background: #d9d9f3;
     border-radius: 15px 15px 15px 1px;
